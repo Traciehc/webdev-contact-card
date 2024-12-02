@@ -1,0 +1,102 @@
+@import url("reset.css");
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: rgb(201, 231, 231);
+}
+
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.contact-info ul, .business-name-slogan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contact-info li, .business-name-slogan li {
+    margin-bottom: 5px;
+}
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        height: 350px;
+    }
+
+    .flex-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .image-container {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .image-container img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+   .contact-info li, .business-name-slogan li {
+       flex-basis:45%;
+       margin: 10px;
+   } 
+    
+}
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .image-container {
+        margin-right: 20px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    flex-direction: column;
+}
